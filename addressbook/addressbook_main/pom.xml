@@ -292,7 +292,31 @@
 					</excludes>
             </configuration>
         </plugin>
-
+	<plugin>
+				<groupId>org.jacoco</groupId>
+			        <artifactId>jacoco-maven-plugin</artifactId>
+			        <version>0.8.7</version>
+			        <executions>
+			                <!-- Prepare JaCoCo agent to collect data during tests -->
+				        <execution>
+				        	<goals>
+				                	<goal>prepare-agent</goal>
+				                </goals>
+				        </execution>
+				                <!-- Generate the coverage report after the tests run -->
+				        <execution>
+				                <id>report</id>
+				                <phase>test</phase>
+				                <goals>
+				                        <goal>report</goal>
+				                </goals>
+				        </execution>
+			        </executions>
+			            <configuration>
+			                <outputDirectory>**/target/jacoco</outputDirectory>
+			                <dataFile>**/target/jacoco.exec</dataFile>
+			            </configuration>
+			</plugin>
         </plugins>
 		<finalName>addressbook</finalName>
     </build>
