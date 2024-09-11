@@ -96,8 +96,8 @@
 				        </execution>
 			        </executions>
 			            <configuration>
-			                <outputDirectory>**/target/jacoco</outputDirectory>
-			                <dataFile>**/target/jacoco.exec</dataFile>
+			                <outputDirectory>/target/jacoco</outputDirectory>
+			                <dataFile>/target/jacoco.exec</dataFile>
 			            </configuration>
 			</plugin>
 </plugins>
