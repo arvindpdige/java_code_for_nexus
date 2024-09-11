@@ -96,9 +96,10 @@
 				        </execution>
 			        </executions>
 			            <configuration>
-			                <outputDirectory>${project.build.directory}/jacoco</outputDirectory>
-			                <dataFile>${project.build.directory}/jacoco.exec</dataFile>
-			            </configuration>
+    <outputDirectory>C:/ProgramData/Jenkins/.jenkins/workspace/sq_test/addressbook/addressbook_main/target/jacoco</outputDirectory>
+    <dataFile>C:/ProgramData/Jenkins/.jenkins/workspace/sq_test/addressbook/addressbook_main/target/jacoco.exec</dataFile>
+</configuration>
+
 			</plugin>
 </plugins>
 </build> 
